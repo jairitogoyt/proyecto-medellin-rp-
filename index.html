@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launcher Proyecto Medellín RP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-image: url('https://cdn.discordapp.com/icons/1015906477682212975/160e50c67f407e95ced05326dadff62f.png?size=4096');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            animation: fadeIn 1s ease;
+        }
+        h1, p {
+            margin: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .button.trailer {
+            background-color: #2196F3;
+        }
+        .button.trailer:hover {
+            background-color: #0b7dda;
+        }
+        .message {
+            font-size: 20px;
+            color: #333;
+            margin-top: 30px;
+            animation: pulse 2s infinite alternate; /* Agregamos una animación de pulso */
+        }
+        .additional-message {
+            font-size: 20px;
+            color: #fff; /* Cambiamos el color del texto a blanco */
+            margin-top: 20px;
+            transition: color 0.3s ease; /* Transición para el cambio de color */
+        }
+        .additional-message:hover {
+            color: #000; /* Cambia el color a negro al pasar el cursor por encima */
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            to {
+                transform: scale(1.05);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Launcher Proyecto Medellín RP</h1>
+        <p>Bienvenido al launcher para Proyecto Medellín RP. ¿Qué deseas hacer?</p>
+        <a href="mtasa://" class="button">Jugar Proyecto Medellín RP</a>
+        <a href="https://discord.gg/jmuJGPGEuW" class="button">Unirse a nuestro Discord</a>
+        <button onclick="redirectToTrailer()" class="button trailer">Ver Trailer Oficial</button>
+        <p class="message">¡Bienvenido! Servidor 100% colombiano sin lista blanca.</p>
+        <p class="additional-message">¡Si no conoces su historia, estás condenado a repetirla!</p>
+        <p id="loadingMessage" style="display:none;">Cargando...</p>
+    </div>
+    <script>
+        function redirectToTrailer() {
+            document.getElementById("loadingMessage").style.display = "block";
+            setTimeout(function(){
+                window.location.href = "https://www.tiktok.com/@100temass_/video/7330300379118210309?is_from_webapp=1&sender_device=pc";
+            }, 2000); // Cambia este valor al tiempo deseado en milisegundos
+        }
+    </script>
+</body>
+</html>
+
+
